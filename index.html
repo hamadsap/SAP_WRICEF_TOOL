@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SAP WRICEF Tool</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2><img src="images/logo.png" alt="Icon" class="icon"></h2>
+    <form id="sapForm">
+      <div class="label-container">
+        Connect Your SAP System:
+        <img src="images/Info.png" id="info-icon" alt="Info" class="info-icon">
+      </div>
+      <input type="api" id="api" placeholder="https://server:port/zgettab/GetTables?sap-client=100" class="styled-api" name="api">
+      <!-- Tooltip -->
+          <div class="tooltip" id="tooltip">
+            <a href="https://drive.google.com/drive/folders/17Q1mr18vAat8aEpb6KMWgYNU-ndIbdKR?usp=drive_link" target="_blank">
+              APICode</a> to Connect your SAP System. <a href="https://wa.me/923219499877" target="_blank">WhatsApp</a> for Help 
+          </div>
+        <div class="form-group">
+        <label for="OBJC" class="radio-inline"><input type="radio" id="OBJC" class="radio-option"
+            name="option" value="OBJC" checked>Find Objects</label>
+        <label for="TABL" class="radio-inline"><input type="radio" id="TABL" name="option" class="radio-option"
+            value="TABL">Find Table</label>
+        <label for="CDS" class="radio-inline"><input type="radio" id="CDS" name="option" class="radio-option"
+            value="CDS">Find CDS</label>
+      </div>
+
+      <div id="tableCdsFields" class="hidden">
+        <label for="field1" class="input-label">Enter Fields Name</label>
+        <div>
+          <input type="text" id="field1" placeholder="BELNR" class="input-tablefields" name="field1">
+          <input type="text" id="field2" placeholder="BUKRS" class="input-tablefields" name="field2">
+        </div>
+        <div>
+          <input type="text" id="field3" placeholder="VBELN" class="input-tablefields" name="field3">
+          <input type="text" id="field4" placeholder="MATNR" class="input-tablefields" name="field4">
+        </div>
+      </div>
+
+      <div id="findObjectSel">
+        <div class="form-group">
+          <label for="tcode" class="input-label">Object Name:</label>
+          <input type="text" id="tcode" placeholder="T-Code" class="input-tcode" name="tcode">
+          <input type="text" id="program" placeholder="Program Name" class="input-prog" name="program">
+        </div>
+        <div class="input-group">
+          <label for="wricef">Object Type:</label>
+          <select id="wricef" class="styled-select">
+            <option value="T">Tables</option>
+            <option value="I">BAPI</option>
+            <option value="F">Function Modules</option>
+            <option value="D">Development Class Exits</option>
+            <option value="U">User Exits</option>
+            <option value="P">Program Exits / Customer Exits</option>
+            <option value="B">BADIs</option>
+            <option value="C">Customer BADIs</option>
+            <option value="S">Submits</option>
+            <option value="E">Business Transaction Event</option>
+            <option value="A">Include authority-check search</option>
+            <option value="W">Display workflow links</option>
+            <!-- Add more options for other objects if needed -->
+          </select>
+        </div>
+      </div>
+
+      <button class="button" id="submit">Submit</button>
+    </form>
+    <div id="results">
+      <div id="loading" class="loading hidden1">
+        Loading... <div class="spinner"></div>
+      </div>
+      <div id="error-message"></div>
+      <table id="tableResults" class="hidden1">
+        <thead>
+          <tr>
+            <th>Object</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Results will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+    <!-- Footer -->
+    <footer class="note">
+      <p class="note">Developed by <a href="https://www.linkedin.com/in/hamadsap/" target="_blank">@Hamad</a></p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

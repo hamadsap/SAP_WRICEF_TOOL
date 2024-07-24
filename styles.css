@@ -50,11 +50,12 @@ body {
   color: #333;
   border: 1px solid #ddd;
   border-radius: 10px; /* Add rounded corners */
-  padding: 10px;
+  padding: 6px;
   z-index: 1000;
   /* Position to the right of the icon */
-  left: 50px; /* Adjust this value to control the distance from the icon */
-  top: 105px;
+  /*left: 50px; /* Adjust this value to control the distance from the icon */
+  top: 117px;
+  font-size: small;
 }
 /* Container styles */
 .container {

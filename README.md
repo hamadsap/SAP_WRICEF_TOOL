@@ -7,6 +7,7 @@ SAP WRICEF Tool helps to get SAP objects against Transaction Code and to find Da
 
 - [Web Version](https://hamadsap.github.io/SAP_WRICEF_TOOL/)
 - [Chrome Extension](https://chromewebstore.google.com/detail/sap-wricef-tool/lkcmbnjhgbafjfmmmdhfgnfgkkgojiek?hl=en)
+- TCODE: ZWRICEF_TOOL (SAP GUI 8.0)
 
 # Features of SAP WRICEF TOOL
 

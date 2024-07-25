@@ -43,9 +43,15 @@ SAP WRICEF Tool helps to get SAP objects against Transaction Code and to find Da
 
 ![image](https://github.com/user-attachments/assets/f437db68-f80b-44d5-ad6d-f93b3aa491e0)
 
+* Copy URL of the Service
+
+![image](https://github.com/user-attachments/assets/81c25fc4-d00c-45d2-863a-98aad4007a5e)
+
 * Test API Get Request [Change Server and Port]
 [Example API](https://host.sap.pk:44300/zgettab/GetTables?sap-client=100&TCODE=PA30&OBJECT=T)
 
 * TEST SAP WRICEF TOOL
 
 ![image](https://github.com/user-attachments/assets/413edd00-1e1e-4aa0-926f-c2328d4772ee)
+
+![image](https://github.com/user-attachments/assets/d46cd7e3-4718-4c2d-9dbc-2a50cffa7a7e)

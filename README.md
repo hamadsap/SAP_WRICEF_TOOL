@@ -1,6 +1,19 @@
 # SAP_WRICEF_TOOL
 SAP WRICEF Tool helps to get SAP objects against Transaction Code and to find Database Table and CDS View
 
+![image](https://github.com/user-attachments/assets/59fd2633-3f06-4eff-bd85-8ab781d8e352)
+
+# Where to use WRICEF TOOL
+
+- [Web Version](https://hamadsap.github.io/SAP_WRICEF_TOOL/)
+- [Chrome Extension](https://chromewebstore.google.com/detail/sap-wricef-tool/lkcmbnjhgbafjfmmmdhfgnfgkkgojiek?hl=en)
+
+# Features of SAP WRICEF TOOL
+
+- [WATCH VIDEO](https://www.youtube.com/watch?v=bo49On13rVk)
+
+# How to Setup SAP WRICEF TOOL
+
 * [Download Zip File](https://github.com/hamadsap/SAP_WRICEF_TOOL/archive/refs/heads/main.zip)
 * [Install ABAPGIT Program and Execute (SE38)](https://raw.githubusercontent.com/abapGit/build/main/zabapgit_standalone.prog.abap)
 * Click New Offline
@@ -32,3 +45,7 @@ SAP WRICEF Tool helps to get SAP objects against Transaction Code and to find Da
 
 * Test API Get Request [Change Server and Port]
 [Example API](https://host.sap.pk:44300/zgettab/GetTables?sap-client=100&TCODE=PA30&OBJECT=T)
+
+* TEST SAP WRICEF TOOL
+
+![image](https://github.com/user-attachments/assets/413edd00-1e1e-4aa0-926f-c2328d4772ee)

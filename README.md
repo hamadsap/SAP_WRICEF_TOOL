@@ -11,6 +11,7 @@ SAP WRICEF Tool helps to get SAP objects against Transaction Code and to find Da
 
 # Features of SAP WRICEF TOOL
 
+- [LinkedIn Post](https://www.linkedin.com/posts/hamadsap_sap-wricef-database-activity-7110498419432914944-gzV_/)
 - [WATCH VIDEO](https://www.youtube.com/watch?v=bo49On13rVk)
 
 # How to Setup SAP WRICEF TOOL

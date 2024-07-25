@@ -1,0 +1,359 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+}
+
+/* Reset default margins and paddings */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.label-container {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+  display: flex; /* Display children in a row */
+  align-items: center; /* Center vertically within the container */
+}
+
+.info-icon {
+  margin-left: 5px; /* Add some spacing between label text and icon */
+  cursor: pointer;
+  width: 17px;
+  height: 15px;
+
+}
+.Whatsapp-icon{
+  width: 15px;
+  height: 15px;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: #f9ffe5;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Add rounded corners */
+  padding: 10px;
+  z-index: 1000;
+  /* Position to the right of the icon */
+  left: 50px; /* Adjust this value to control the distance from the icon */
+  top: 105px;
+}
+
+/* Container styles */
+.container {
+  background: linear-gradient(to bottom, #f4f4f4e8, #ffffff, #c8e9fc);
+
+  /*background: linear-gradient(to bottom, #c8e9fc, #f1ffc3);
+    background: linear-gradient(to bottom, #ffffff, #c8e9fc);
+    background: linear-gradient(to bottom, #c8e9fc, #414e72);
+    background: linear-gradient(to bottom, #f4f4f4e8,#ffffff, #c8e9fc);*/
+
+  width: 350px;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the header */
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* Vertically center items within the row */
+  justify-content: space-evenly;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 12px;
+}
+
+.input-label {
+  flex: 0 0 40px;
+  /* Fixed width for labels (adjust as needed) */
+  margin-right: 2px;
+  text-align: left;
+  /* Right-align the labels */
+  font-size: 12px;
+}
+
+.input-tcode {
+  font-size: 12px;
+  color: #555;
+  width: 70px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.input-tablefields {
+  font-size: 12px;
+  color: #555;
+  width: 150px;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.input-prog {
+  font-size: 12px;
+  color: #555;
+  width: 180px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Styled select element */
+.styled-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color: #555;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 12px;
+}
+
+/* Styled select element */
+.styled-api {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color: #555;
+  padding: 10px;
+  border-radius: 5px;
+  width: 340px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+
+
+/* Button styles */
+.button {
+
+  background-color: #757575;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Results table styles */
+#results {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 7px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  max-width: 200px;
+}
+
+td:nth-child(1) {
+  font-size: 9px;
+}
+
+td:nth-child(2) {
+  font-size: 8.5px;
+}
+
+
+/* Table header styles */
+thead th {
+  background-color: #6bb188;
+  color: #fff;
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+
+}
+
+/* Table row styles */
+tr:nth-child(even) {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+/* Loading styles */
+.loading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #0074d9;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* Center the footer text */
+.footer {
+  text-align: center;
+}
+
+.page-heading {
+  font-size: 20px;
+  color: #515b6f;
+  /* You can adjust the color to your preference */
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  /* Convert text to uppercase */
+}
+
+
+.note {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+
+.icon {
+  vertical-align: right;
+  margin-right: 10px;
+  width: 100%;
+  /* Adjust the width as needed */
+  height: 100px;
+  /* Adjust the height as needed */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+/* Hide the table initially */
+.hidden1 {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+.highlight {
+  border: 2px solid red;
+}
+
+.result-fields {
+  color: #b16b6b;
+}
+
+#error-message {
+  color: #492929;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-top: 10px;
+}
